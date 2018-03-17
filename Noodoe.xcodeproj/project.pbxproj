@@ -12,6 +12,13 @@
 		3D8BC5C0205CF89900C09C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC5BE205CF89900C09C5E /* Main.storyboard */; };
 		3D8BC5C2205CF89900C09C5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC5C1205CF89900C09C5E /* Assets.xcassets */; };
 		3D8BC5C5205CF89900C09C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC5C3205CF89900C09C5E /* LaunchScreen.storyboard */; };
+		3D8BC5D0205CF95B00C09C5E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5CF205CF95B00C09C5E /* UserModel.swift */; };
+		3D8BC5D2205CF97D00C09C5E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5D1205CF97D00C09C5E /* ErrorModel.swift */; };
+		3D8BC5D5205CFBA900C09C5E /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5D4205CFBA900C09C5E /* AppConfig.swift */; };
+		3D8BC5D7205CFBE600C09C5E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5D6205CFBE600C09C5E /* Error.swift */; };
+		3D8BC5D9205CFC5000C09C5E /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5D8205CFC5000C09C5E /* HttpService.swift */; };
+		3D8BC5DB205CFC7700C09C5E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5DA205CFC7700C09C5E /* ApiService.swift */; };
+		3D8BC5DD205CFD0000C09C5E /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC5DC205CFD0000C09C5E /* UpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		3D8BC5C1205CF89900C09C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8BC5C4205CF89900C09C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8BC5C6205CF89900C09C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D8BC5CF205CF95B00C09C5E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3D8BC5D1205CF97D00C09C5E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		3D8BC5D4205CFBA900C09C5E /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		3D8BC5D6205CFBE600C09C5E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		3D8BC5D8205CFC5000C09C5E /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		3D8BC5DA205CFC7700C09C5E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		3D8BC5DC205CFD0000C09C5E /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,53 @@
 		3D8BC5B9205CF89900C09C5E /* Noodoe */ = {
 			isa = PBXGroup;
 			children = (
+				3D8BC5D3205CFB8800C09C5E /* Service */,
+				3D8BC5CE205CF92800C09C5E /* Storyboard */,
+				3D8BC5CD205CF8EE00C09C5E /* Model */,
+				3D8BC5CC205CF8D700C09C5E /* Controllers */,
+				3D8BC5D6205CFBE600C09C5E /* Error.swift */,
 				3D8BC5BA205CF89900C09C5E /* AppDelegate.swift */,
-				3D8BC5BC205CF89900C09C5E /* ViewController.swift */,
-				3D8BC5BE205CF89900C09C5E /* Main.storyboard */,
+				3D8BC5D4205CFBA900C09C5E /* AppConfig.swift */,
 				3D8BC5C1205CF89900C09C5E /* Assets.xcassets */,
-				3D8BC5C3205CF89900C09C5E /* LaunchScreen.storyboard */,
 				3D8BC5C6205CF89900C09C5E /* Info.plist */,
 			);
 			path = Noodoe;
+			sourceTree = "<group>";
+		};
+		3D8BC5CC205CF8D700C09C5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D8BC5BC205CF89900C09C5E /* ViewController.swift */,
+				3D8BC5DC205CFD0000C09C5E /* UpdateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D8BC5CD205CF8EE00C09C5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8BC5CF205CF95B00C09C5E /* UserModel.swift */,
+				3D8BC5D1205CF97D00C09C5E /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8BC5CE205CF92800C09C5E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D8BC5BE205CF89900C09C5E /* Main.storyboard */,
+				3D8BC5C3205CF89900C09C5E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3D8BC5D3205CFB8800C09C5E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D8BC5D8205CFC5000C09C5E /* HttpService.swift */,
+				3D8BC5DA205CFC7700C09C5E /* ApiService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8BC5BD205CF89900C09C5E /* ViewController.swift in Sources */,
+				3D8BC5D5205CFBA900C09C5E /* AppConfig.swift in Sources */,
+				3D8BC5DD205CFD0000C09C5E /* UpdateViewController.swift in Sources */,
+				3D8BC5D0205CF95B00C09C5E /* UserModel.swift in Sources */,
+				3D8BC5D2205CF97D00C09C5E /* ErrorModel.swift in Sources */,
+				3D8BC5D7205CFBE600C09C5E /* Error.swift in Sources */,
 				3D8BC5BB205CF89900C09C5E /* AppDelegate.swift in Sources */,
+				3D8BC5DB205CFC7700C09C5E /* ApiService.swift in Sources */,
+				3D8BC5D9205CFC5000C09C5E /* HttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4S3NCEBHL3;
 				INFOPLIST_FILE = Noodoe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.giggs.Noodoe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4S3NCEBHL3;
 				INFOPLIST_FILE = Noodoe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.giggs.Noodoe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

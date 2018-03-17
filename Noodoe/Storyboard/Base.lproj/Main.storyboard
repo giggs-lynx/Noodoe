@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EVb-WZ-dFp">
+    <device id="retina5_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gk0-eG-Yk7">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="EVb-WZ-dFp" customClass="ViewController" customModule="Noodoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6xj-Zb-zhh">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9K-nj-EpI">
+                                <rect key="frame" x="256" y="33.666666666666657" width="300" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-AU-KAE" userLabel="Act Text Field">
+                                        <rect key="frame" x="20" y="20" width="260" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-3L-ckZ" userLabel="Pwd Text Field">
+                                        <rect key="frame" x="20" y="60" width="260" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uoS-3L-ckZ" secondAttribute="trailing" constant="20" id="1W5-5C-QQA"/>
+                                    <constraint firstItem="uoS-3L-ckZ" firstAttribute="top" secondItem="5fW-AU-KAE" secondAttribute="bottom" constant="10" id="39c-My-rX5"/>
+                                    <constraint firstItem="5fW-AU-KAE" firstAttribute="leading" secondItem="A9K-nj-EpI" secondAttribute="leading" constant="20" id="PDe-4V-Ges"/>
+                                    <constraint firstAttribute="width" constant="300" id="RKl-7P-3f6">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="450"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="uoS-3L-ckZ" secondAttribute="bottom" constant="20" id="Ua2-15-F7m"/>
+                                    <constraint firstItem="uoS-3L-ckZ" firstAttribute="leading" secondItem="A9K-nj-EpI" secondAttribute="leading" constant="20" id="cUU-aN-VNx"/>
+                                    <constraint firstItem="uoS-3L-ckZ" firstAttribute="top" secondItem="5fW-AU-KAE" secondAttribute="bottom" constant="10" id="qb9-X6-Tnl"/>
+                                    <constraint firstAttribute="trailing" secondItem="5fW-AU-KAE" secondAttribute="trailing" constant="20" id="rZo-kF-4Zp"/>
+                                    <constraint firstItem="5fW-AU-KAE" firstAttribute="top" secondItem="A9K-nj-EpI" secondAttribute="top" constant="20" id="t9l-BZ-XW5"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS6-VN-4QH" userLabel="Login Button">
+                                <rect key="frame" x="276" y="143.66666666666666" width="260" height="30"/>
+                                <color key="backgroundColor" red="0.21761608120000001" green="0.79150801900000001" blue="0.21343147749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SS6-VN-4QH" firstAttribute="top" secondItem="A9K-nj-EpI" secondAttribute="bottom" id="9CP-N2-dmG"/>
+                            <constraint firstItem="A9K-nj-EpI" firstAttribute="centerY" secondItem="SyX-Qc-FAp" secondAttribute="centerY" multiplier="0.5" id="ED0-ym-9IX"/>
+                            <constraint firstItem="SS6-VN-4QH" firstAttribute="centerX" secondItem="SyX-Qc-FAp" secondAttribute="centerX" id="TuS-yi-sq3"/>
+                            <constraint firstItem="SS6-VN-4QH" firstAttribute="width" secondItem="uoS-3L-ckZ" secondAttribute="width" id="ciJ-hH-a7e"/>
+                            <constraint firstItem="A9K-nj-EpI" firstAttribute="centerX" secondItem="SyX-Qc-FAp" secondAttribute="centerX" id="zJq-VF-VZn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SyX-Qc-FAp"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountTextField" destination="5fW-AU-KAE" id="bsd-J5-OPW"/>
+                        <outlet property="loginButton" destination="SS6-VN-4QH" id="Dxv-Sj-csA"/>
+                        <outlet property="passwordTextField" destination="uoS-3L-ckZ" id="XVf-Vp-KiS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIV-gy-xwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="-290"/>
+        </scene>
+        <!--Update View Controller-->
+        <scene sceneID="sRU-oc-rGe">
+            <objects>
+                <viewController storyboardIdentifier="UpdateViewController" id="jKL-Ev-L5O" customClass="UpdateViewController" customModule="Noodoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R17-3f-XkD">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZE-Ri-icy" userLabel="Update Button">
+                                <rect key="frame" x="306" y="162" width="200" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6Fj-hR-4GK"/>
+                                </constraints>
+                                <state key="normal" title="timezone -&gt; 8">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateButtonDidTap:" destination="jKL-Ev-L5O" eventType="touchUpInside" id="HmN-2P-bjX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rZE-Ri-icy" firstAttribute="centerY" secondItem="Tbg-sN-SAd" secondAttribute="centerY" id="SW3-B9-dqO"/>
+                            <constraint firstItem="rZE-Ri-icy" firstAttribute="centerX" secondItem="Tbg-sN-SAd" secondAttribute="centerX" id="hoB-kG-vdN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tbg-sN-SAd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ndh-dV-U4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-290"/>
+        </scene>
+    </scenes>
+</document>
